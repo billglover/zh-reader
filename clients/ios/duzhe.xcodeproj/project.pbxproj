@@ -28,6 +28,7 @@
 		C1A8745B25CF3BDD00D16E0F /* HighlightingEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8745925CF3BDD00D16E0F /* HighlightingEditor.swift */; };
 		C1A8745C25CF3BDD00D16E0F /* HighlightedEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8745A25CF3BDD00D16E0F /* HighlightedEditor.swift */; };
 		C1A8746025D08D7B00D16E0F /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8745F25D08D7B00D16E0F /* AuthenticationService.swift */; };
+		C1C7F1D325DB1DCE004B04B9 /* ReaderSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7F1D225DB1DCE004B04B9 /* ReaderSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		C1A8745925CF3BDD00D16E0F /* HighlightingEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightingEditor.swift; sourceTree = "<group>"; };
 		C1A8745A25CF3BDD00D16E0F /* HighlightedEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightedEditor.swift; sourceTree = "<group>"; };
 		C1A8745F25D08D7B00D16E0F /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		C1C7F1D225DB1DCE004B04B9 /* ReaderSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				C1A8744125CCAEF800D16E0F /* VocabRowView.swift */,
 				C1A8744425CD816A00D16E0F /* VocabEditView.swift */,
 				C1A8745525CF3AAD00D16E0F /* ReaderView.swift */,
+				C1C7F1D225DB1DCE004B04B9 /* ReaderSummaryView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				C1A8743F25CCAB9D00D16E0F /* VocabDetailsView.swift in Sources */,
 				C1A8742F25CC8A3800D16E0F /* VocabViewModel.swift in Sources */,
 				C1A8745225CF38CF00D16E0F /* Trie.swift in Sources */,
+				C1C7F1D325DB1DCE004B04B9 /* ReaderSummaryView.swift in Sources */,
 				C1A8741E25CC83BD00D16E0F /* VocabListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

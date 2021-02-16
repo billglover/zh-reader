@@ -69,7 +69,7 @@ extension Trie {
         return currentNode.isWordEnd
     }
     
-    func knownPhrases(text: String) -> [Range<String.Index>] {
+    func knownPhrases(text: String) -> ([Range<String.Index>], Int, Double) {
         var currentNode = root
         let cs = Array(text)
         var i = 0
@@ -78,6 +78,7 @@ extension Trie {
         var start = 0
         
         var matches: [Range<String.Index>] = Array()
+        var known = 0
                 
         while(i<len){
         
@@ -92,6 +93,7 @@ extension Trie {
                     let endIndex = text.index(text.startIndex, offsetBy: i+1)
                     let range = startIndex..<endIndex
                     matches.append(range)
+                    known += text[range].count
                     start = i
                     
                 }
@@ -112,11 +114,14 @@ extension Trie {
                 let endIndex = text.index(text.startIndex, offsetBy: i+1)
                 let range = startIndex..<endIndex
                 matches.append(range)
+                known += text[range].count
             }
             
             i+=1
         }
         
-        return matches
+        let count = text.split{!$0.isLetter}.joined().count
+        
+        return (matches, count, Double(known)/Double(count))
     }
 }

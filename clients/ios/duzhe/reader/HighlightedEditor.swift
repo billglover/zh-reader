@@ -56,7 +56,7 @@ struct HighlightedEditor<ViewModelType: VocabViewModelProtocol>: UIViewRepresent
         
         //---//
         
-        let matches = viewModel.trie.knownPhrases(text: text)
+        let (matches, length, readability) = viewModel.trie.knownPhrases(text: text)
         
         // Apply Base Styles
         //highlightedString.addAttribute(.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length: highlightedString.length))
@@ -66,7 +66,7 @@ struct HighlightedEditor<ViewModelType: VocabViewModelProtocol>: UIViewRepresent
         for r in matches {
             let nsRange = NSRange(r, in: text)
             //highlightedString.addAttribute(.underlineStyle, value: 3, range: nsRange)
-            highlightedString.addAttribute(.foregroundColor, value: UIColor.systemTeal, range: nsRange)
+            highlightedString.addAttribute(.foregroundColor, value: UIColor(Color.accentColor), range: nsRange)
         }
         
         return highlightedString

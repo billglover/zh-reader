@@ -12,16 +12,27 @@ struct ReaderView<ViewModelType: VocabViewModelProtocol>: View {
     @State var text: String = "森林里有一棵好大好大的树，树杈上有一个鸟窝，那是乌鸦的家。 "
     
     var body: some View {
-        HighlightedEditor(text: $text, viewModel: viewModel)
-            .onAppear(){
-                viewModel.fetchData()
-            }
-            .padding()
+        VStack {
+            ReaderSummaryView(text: $text, viewModel: viewModel)
+            
+            Divider()
+            
+            HighlightedEditor(text: $text, viewModel: viewModel)
+                .onAppear(){
+                    viewModel.fetchData()
+                }
+                .padding()
+        }
+        .accentColor(.pink)
     }
 }
 
 struct ReaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ReaderView(viewModel: DesignTimeVocabViewModel())
+        Group {
+            ReaderView(viewModel: DesignTimeVocabViewModel())
+            ReaderView(viewModel: DesignTimeVocabViewModel())
+                .preferredColorScheme(.dark)
+        }
     }
 }
