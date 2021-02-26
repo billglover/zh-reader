@@ -1,0 +1,7 @@
+#!/bin/bash
+../zhimporter -lang zh -source "https://raw.githubusercontent.com/glxxyz/hskhsk.com/main/data/lists/HSK%20Official%20With%20Definitions%202012%20L1%20freqorder.txt" -title "HSK Level 1" -file HSK\ Official\ With\ Definitions\ 2012\ L1\ freqorder.txt
+../zhimporter -lang zh -source "https://raw.githubusercontent.com/glxxyz/hskhsk.com/main/data/lists/HSK%20Official%20With%20Definitions%202012%20L2%20freqorder.txt" -title "HSK Level 2" -file HSK\ Official\ With\ Definitions\ 2012\ L2\ freqorder.txt
+../zhimporter -lang zh -source "https://raw.githubusercontent.com/glxxyz/hskhsk.com/main/data/lists/HSK%20Official%20With%20Definitions%202012%20L3%20freqorder.txt" -title "HSK Level 3" -file HSK\ Official\ With\ Definitions\ 2012\ L3\ freqorder.txt
+../zhimporter -lang zh -source "https://raw.githubusercontent.com/glxxyz/hskhsk.com/main/data/lists/HSK%20Official%20With%20Definitions%202012%20L4%20freqorder.txt" -title "HSK Level 4" -file HSK\ Official\ With\ Definitions\ 2012\ L4\ freqorder.txt
+../zhimporter -lang zh -source "https://raw.githubusercontent.com/glxxyz/hskhsk.com/main/data/lists/HSK%20Official%20With%20Definitions%202012%20L5%20freqorder.txt" -title "HSK Level 5" -file HSK\ Official\ With\ Definitions\ 2012\ L5\ freqorder.txt
+../zhimporter -lang zh -source "https://raw.githubusercontent.com/glxxyz/hskhsk.com/main/data/lists/HSK%20Official%20With%20Definitions%202012%20L6%20freqorder.txt" -title "HSK Level 6" -file HSK\ Official\ With\ Definitions\ 2012\ L6\ freqorder.txt
